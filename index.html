@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="box" id="startScreen">
+        <h1>Quiz App</h1>
+
+        <input id="name" placeholder="Name">
+        <input id="roll" placeholder="Roll Number" maxlength="13">
+        <input id="section" placeholder="Section">
+
+        <button onclick="startQuiz()">Start</button>
+
+        <p id="error"></p>
+    </div>
+
+    <div class="box quiz-box" id="quizScreen">
+
+        <div class="student-info">
+            <span id="showName"></span>
+            <span id="showRoll"></span>
+            <span id="showSection"></span>
+        </div>
+
+        <h2 id="question"></h2>
+
+        <div id="options"></div>
+        <button id="nextBtn" onclick="nextQuestion()">Next</button>
+
+    </div>
+     
+    <div class="box" id="resultScreen">
+        <h1>Quiz Completed!</h1>
+        <h2 id="resultName"></h2>
+        <h2 id="finalScore"></h2>
+
+        <button onclick="restartQuiz()">Restart</button>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
